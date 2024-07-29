@@ -12,7 +12,3 @@ PointsHook consists of:
 ## Documentation
 
 Refer to the source code and comments for detailed documentation.
-
-## Usage
-
-### Build
