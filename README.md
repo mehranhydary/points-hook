@@ -1,66 +1,18 @@
-## Foundry
+## PointsHook
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**PointsHook is a smart contract that integrates with Uniswap V4 to reward users with points for certain actions like swapping and adding liquidity.**
 
-Foundry consists of:
+PointsHook consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+-   **BaseHook**: A base contract that PointsHook extends to integrate with Uniswap V4.
+-   **ERC20**: PointsHook inherits from Solmate's ERC20 implementation to manage point tokens.
+-   **CurrencyLibrary**: Provides helper functions for Currency data types.
+-   **BalanceDeltaLibrary**: Provides helper functions for BalanceDelta data types.
 
 ## Documentation
 
-https://book.getfoundry.sh/
+Refer to the source code and comments for detailed documentation.
 
 ## Usage
 
 ### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
